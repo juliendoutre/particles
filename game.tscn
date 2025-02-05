@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsq3gxjkdc4qr"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_qevud"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jfrrb"]
+font_size = 36
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qevud")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -31.5
+offset_right = 31.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "0 seconds"
+label_settings = SubResource("LabelSettings_jfrrb")
